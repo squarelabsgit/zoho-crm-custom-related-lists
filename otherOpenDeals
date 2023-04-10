@@ -32,7 +32,7 @@ if(!isnull(contact))
 		for each  openDeal in openRelatedDeals
 		{
 			responseXML = responseXML + "<row no='" + rowVal + "'>";
-			responseXML = responseXML + "<FL link='true' url='<<INSERT CRM DEALS URL HERE>>" + openDeal.get("id") + "' val='Deal Name'>" + openDeal.get("Deal_Name") + "</FL>";
+			responseXML = responseXML + "<FL link='true' url='<<INSERT ZOHO CRM DEALS URL HERE>>" + openDeal.get("id") + "' val='Deal Name'>" + openDeal.get("Deal_Name") + "</FL>";
 			responseXML = responseXML + "<FL val='Stage'>" + openDeal.get("Stage") + "</FL>";
 			responseXML = responseXML + "<FL val='Closing Date'>" + openDeal.get("Closing_Date") + "</FL>";
 			responseXML = responseXML + "<FL val='Amount'>$" + openDeal.get("Amount") + "</FL>";
