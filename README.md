@@ -1,5 +1,5 @@
 # Custom Related Lists in Zoho CRM
-Blog Post: https://www.squarelabs.com.au/post/beyond-lookup-fields-building-custom-related-lists-in-zoho-crm
+Blog Post: https://www.squarelabs.com.au/post/how-to-create-custom-related-lists-in-zoho-crm-without-lookup-fields
 
 YouTube: https://youtu.be/04HJ1rjc1sA
 
