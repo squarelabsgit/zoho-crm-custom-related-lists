@@ -5,7 +5,7 @@ YouTube: https://youtu.be/04HJ1rjc1sA
 
 Traditionally, related lists in Zoho CRM are created using lookup fields, which establish a direct relationship between records. However, Zoho CRM provides an alternative approach by allowing the creation of custom related lists. These lists enable you to display an filter associated data from multiple modules or sources, offering a more flexible and dynamic representation of information.
 
-In this article, I'll take you through a step-by-step guide to creating a custom related list, as well as some advanced ways to manipulate the data shown in those custom related lists. The example I'll be using in this tutorial is how to show other deals that are associated with the same account on a deal record. I will start off basic and build on it throughout the article and explain the rational behind the changes.
+In this article, I'll take you through a step-by-step guide to building custom related lists in Zoho CRM, as well as some advanced ways to manipulate the data shown in those custom related lists. The example I'll be using in this tutorial is how to show other deals that are associated with the same account on a deal record. I will start off basic and build on it throughout the article and explain the rational behind the changes.
 
 ## Configuration & Deployment
 
