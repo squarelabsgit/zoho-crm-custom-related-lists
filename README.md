@@ -28,7 +28,7 @@ To begin we need to setup a related list function.
 
 ###### Screenshots of the steps to take are in the blog post. Link at the top.
 
-### Data
+## Data
 Custom related lists offer a versatile way to display data from various related records, even if they are not directly linked. This is particularly useful when you need to provide additional context or related details to better understand a record's history or status.
 
 In our example, since deals are not directly linked to each other due to the absence of a lookup field, the system does not provide a related list to display this information. We can however return all deals related to the account using deluge
@@ -128,7 +128,7 @@ In this example, we can see all deals associated with the account being displaye
 
 In the next part of the article, we will explore more advanced features to leverage the custom related lists and ensure the data is displayed exactly as desired, addressing all the issues mentioned above.
 
-### Filtering
+## Filtering
 As a custom related list is created by a custom function this allows us to manipulate the data collected before displaying it. This means we can filter out data we don't want to display or deem irrelevant at the time.
 
 Using our example above, we can update our code to filter out the deal that we are currently viewing and while we are at it, lets also filter out closed deals so we are only showing the the accounts open deals.
@@ -196,7 +196,7 @@ return responseXML;
 
 ![V2 Example](https://static.wixstatic.com/media/c8c3af_8bd655bff10247fbaa6f4cdbf0224320~mv2.png/v1/fill/w_3588,h_777,al_c,q_90/c8c3af_8bd655bff10247fbaa6f4cdbf0224320~mv2.webp)
 
-### Linking Data & Formatting
+## Linking Data & Formatting
 Now that we have the right data being displayed in the related list, it is important to create a link to open the corresponding record. This feature is crucial and can be easily achieved in a custom related list. To accomplish this, we need to modify our FL Tag in the XML to include both a link and URL attribute, as shown in the example below:
 
 ```js
@@ -334,7 +334,7 @@ return responseXML;
 
 ![V3 Result](https://static.wixstatic.com/media/c8c3af_301a63c8beb84adfbc3452c4e1f60595~mv2.png/v1/fill/w_3588,h_1021,al_c,q_90/c8c3af_301a63c8beb84adfbc3452c4e1f60595~mv2.webp)
 
-### Sorting
+## Sorting
 A custom related list is displayed in the order that the record resides in the list. So we just need to sort the list by one of the data points right? Yes, however as we are writing in deluge and dealing with a list of JSON maps its not as easy as running a sort function over the list. I have created an article on how to sort a list of maps by a specific field which you can read in more detail for a more technical explanation of the way we are sorting in this example.
 
 ### V4 Example Code
@@ -474,7 +474,7 @@ return responseXML;
 
 ![V4 Result](https://static.wixstatic.com/media/c8c3af_69d084398440439788e3c9b773245ed9~mv2.png/v1/fill/w_3588,h_847,al_c,q_90/c8c3af_69d084398440439788e3c9b773245ed9~mv2.webp)
 
-### Dealing with Special Characters
+## Dealing with Special Characters
 If you use some specific special characters in fields that you want to use in your related list they can cause errors. As we are creating an XML String in our related list some special characters have a predefined meaning and syntax within the XML markup language. These special characters include <, >, ", ', &, and sometimes others, depending on the context.
 
 So how do stop these characters from causing an error in your related list? There are a few options available:
@@ -649,7 +649,7 @@ I hope this article has equipped you with all the necessary information and prac
 
 Need Help? Contact us!
 
-Resources
+## Resources
 
 GitHub Code: https://github.com/squarelabsgit/zoho-crm-custom-related-lists 
 
