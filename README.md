@@ -1,5 +1,5 @@
 # Custom Related Lists in Zoho CRM
-Blog Post: https://www.squarelabs.com.au/post/how-to-create-custom-related-lists-in-zoho-crm-without-lookup-fields
+Blog Post: https://www.squarelabs.com.au/blogs/post/how-to-create-custom-related-lists-in-zoho-crm-without-lookup-fields
 
 YouTube: https://youtu.be/04HJ1rjc1sA
 
@@ -60,7 +60,7 @@ We can also return back an message if no data is found in this format.
 ### XML Errors
 If there is an issue with your XML String you will see this error when viewing the related list on the record. When this occurs review your code and run the function inside the script builder to check for errors.
 
-![XML Errors](https://static.wixstatic.com/media/c8c3af_1637ef94c654437899a012a9ab6e9c74~mv2.png)
+![XML Errors](https://www.squarelabs.com.au/images/blogs/customRelatedListErrors.png)
 
 ### V1 Example Code
 
@@ -115,7 +115,7 @@ return responseXML;
 
 ### V1 Example Result
 
-![V1 Result](https://static.wixstatic.com/media/c8c3af_034076b0a2904d9586ecc7825e9aab9e~mv2.png/v1/fill/w_3588,h_1021,al_c,q_90/c8c3af_034076b0a2904d9586ecc7825e9aab9e~mv2.webp)
+![V1 Result](https://www.squarelabs.com.au/images/blogs/customRelatedListV1Example.png)
 
 In this example, we can see all deals associated with the account being displayed on the deal record. However, you may have noticed a few issues with it:
 
@@ -194,7 +194,7 @@ return responseXML;
 
 ### V2 Example Result
 
-![V2 Example](https://static.wixstatic.com/media/c8c3af_8bd655bff10247fbaa6f4cdbf0224320~mv2.png/v1/fill/w_3588,h_777,al_c,q_90/c8c3af_8bd655bff10247fbaa6f4cdbf0224320~mv2.webp)
+![V2 Example](https://www.squarelabs.com.au/images/blogs/customRelatedListV2Example.png)
 
 ## Linking Data & Formatting
 Now that we have the right data being displayed in the related list, it is important to create a link to open the corresponding record. This feature is crucial and can be easily achieved in a custom related list. To accomplish this, we need to modify our FL Tag in the XML to include both a link and URL attribute, as shown in the example below:
@@ -332,7 +332,7 @@ return responseXML;
 
 ### V3 Example Result
 
-![V3 Result](https://static.wixstatic.com/media/c8c3af_301a63c8beb84adfbc3452c4e1f60595~mv2.png/v1/fill/w_3588,h_1021,al_c,q_90/c8c3af_301a63c8beb84adfbc3452c4e1f60595~mv2.webp)
+![V3 Result](https://www.squarelabs.com.au/images/blogs/customRelatedListV3Example.png)
 
 ## Sorting
 A custom related list is displayed in the order that the record resides in the list. So we just need to sort the list by one of the data points right? Yes, however as we are writing in deluge and dealing with a list of JSON maps its not as easy as running a sort function over the list. I have created an article on how to sort a list of maps by a specific field which you can read in more detail for a more technical explanation of the way we are sorting in this example.
@@ -472,7 +472,7 @@ return responseXML;
 
 ### V4 Example Result
 
-![V4 Result](https://static.wixstatic.com/media/c8c3af_69d084398440439788e3c9b773245ed9~mv2.png/v1/fill/w_3588,h_847,al_c,q_90/c8c3af_69d084398440439788e3c9b773245ed9~mv2.webp)
+![V4 Result](https://www.squarelabs.com.au/images/blogs/customRelatedListV4Example.png)
 
 ## Dealing with Special Characters
 If you use some specific special characters in fields that you want to use in your related list they can cause errors. As we are creating an XML String in our related list some special characters have a predefined meaning and syntax within the XML markup language. These special characters include <, >, ", ', &, and sometimes others, depending on the context.
@@ -481,9 +481,9 @@ So how do stop these characters from causing an error in your related list? Ther
 
 1. You can create a validation rule inside Zoho CRM on fields that are used in the related list, such as Deal Name that restricts the use of these special characters.
 
-![Validation Rule Config](https://static.wixstatic.com/media/c8c3af_7fd3f05bd3e64f039ea07ae7a7ca84db~mv2.png)
+![Validation Rule Config](https://www.squarelabs.com.au/images/blogs/relatedListValidationRuleExample.png)
 
-![Validation Rule Example](https://static.wixstatic.com/media/c8c3af_ca3e92b6eaa642f3a8a6c65b38c13344~mv2.png)
+![Validation Rule Example](https://www.squarelabs.com.au/images/blogs/relatedListValidationRuleExample2.png)
 
 2. You can use a series of .replaceAll() functions for these 5 characters and entering there corresponding escape sequence. This works on both column name and values.
 
@@ -643,7 +643,7 @@ return responseXML;
 
 ### V5 Example Result
 
-![V5 Result](https://static.wixstatic.com/media/c8c3af_20bd59e2fa014b42b838e47a329d5432~mv2.png)
+![V5 Result](https://www.squarelabs.com.au/images/blogs/customRelatedListV5Example.png)
 
 I hope this article has equipped you with all the necessary information and practical examples you need to create the ideal custom related list for your Zoho CRM system. By implementing the strategies and techniques outlined here, you can enhance your CRM experience and optimise your data representation. Best of luck in customising your related lists to meet your specific needs!
 
